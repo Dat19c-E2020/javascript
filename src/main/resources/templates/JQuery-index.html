@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML og JS demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1 id="header1">Javascript Demo</h1>
+    <input id="input" type=text">
+    <p id="paragraf">Noget tekst!</p>
+    <div id="div">Noget mere tekst!</div>
+    <img id="billede" src="https://imgs.xkcd.com/comics/exploits_of_a_mom.png" alt="exploits - sql injection">
+    <button id="minKnap">Don't Press This Button!</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                btnClick();
+            })
+
+        })
+        function btnClick(){
+            $("#billede").hide();
+            $("#paragraf").html("<b>tid for øvelse</b>");
+        }
+    </script>
+</body>
+</html>
